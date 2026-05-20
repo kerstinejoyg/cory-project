@@ -1,0 +1,217 @@
+/* =========================
+   Custom Variables (Bootstrap override)
+========================= */
+$primary: #786968;
+$secondary: #F5F5F5;
+$tertiary: #C8820B;
+$color-white: #ffffff;
+$fs-normal: 16px;
+$ff-serif: 'Inter', sans-serif;
+$ff-serif-ttl: 'Lato', sans-serif;
+
+/* =========================
+   Import Bootstrap
+========================= */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+/* =========================
+   Custom Styles
+========================= */
+h1, h2, h3, h4, h5, h6, p { padding: 0; }
+
+body {
+  font-family: $ff-serif;
+  font-size: $fs-normal;
+  line-height: 2;
+  color: $primary;
+}
+.container { max-width: 1200px; }
+.container.wide { max-width: 1440px; }
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+
+/* =========================
+   Common Styles - Titles and Buttons
+========================= */
+.c_ttl {
+  font-family: $ff-serif-ttl;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+  span {
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    margin-bottom: 10px;
+  }
+}
+.c_btn {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: $tertiary;
+  min-width: 200px;
+  text-align: center;
+  padding: 10px 37px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  &:hover { background-color: $primary; }
+}
+
+
+//HEADER
+.p_header {
+  > div { padding: 0; }
+  .logo {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0; 
+    width: 72%;
+    max-width: 342px;
+    margin: 0 auto;
+  }
+  img { width: 100%; }  
+}
+
+//MAIN CONTENT
+.f_main {
+  background: $color-white;
+  position: relative;
+  z-index: 1;
+}
+.p_main {
+  &__ttl { 
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    span { 
+      font-size: 24px;
+      display: block;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+  }
+  &__txt { width: 75%; }
+}
+
+
+
+
+//COLLECTION CONTENT
+.f_collection { padding-bottom: 115px; }
+.p_collection {
+  .row { gap: 20px; }
+  .col-md-4 {
+    background: $secondary;
+    padding: 0; 
+    width: 32%; 
+  }
+  &__info { padding: 40px; }
+  .ttl { font-size: 30px; }
+  small {
+    line-height: 1.5;
+    display: block;
+  }
+  img { width: 100%; }
+}
+
+
+
+//VIDEO
+.f_video {
+  video { width: 100%; }
+}
+
+
+//BOTTOM
+.f_bottom {
+  padding: 80px 0 0;
+  .container { padding: 0; }
+}
+.p_bottom {
+  padding: 0 20px;
+  &__txt {
+    width: 530px;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  &__ttl { font-size: 26px; }
+}
+
+
+//FORM
+.p_form {
+  background: #f7f4ef;
+  padding: 50px;
+  &__btn {
+    border: none;
+  }
+  .form-control,
+  .form-select {
+    border-radius: 0;
+    border-color: #d8cec7;
+    padding: 0.85rem 1rem;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: 0 0 0 1px rgba(120, 105, 104, 0.2);
+    outline: none;
+  }
+  textarea { resize: none; }
+  .form-label { line-height: 1; }
+  .form-control, 
+  .form-select { padding: 0.55rem 1rem; }
+}
+
+//BOTTOM IMAGES
+.p_bottom__imgs {
+  margin-left: 0;
+  margin-right: 0;
+  > div { padding: 0; }
+  img { width: 100%; }
+} 
+
+
+
+.f_footer {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.p_footer {
+  width: 83%;
+  &__logo {
+    width: 270px;
+    max-width: 70%;
+  }
+  p {
+    font-size: 10px;
+    position: relative;
+    &.first::before {
+      content: '';
+      background: url(../../assets/images/icon-home.svg) no-repeat center top / contain;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 1px;
+    }
+  }
+}
+
+
+
+
+@import "media";

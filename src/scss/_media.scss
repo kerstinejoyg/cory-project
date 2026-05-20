@@ -1,0 +1,64 @@
+@media only screen and (max-width: 992px) {
+  //COLLECTION
+  .f_collection { padding: 40px 12px;} 
+  .p_collection {
+    .col-md-4 { width: 100%; }
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  //COMMON
+  .c_ttl {
+    font-size: 26px;
+    span { font-size: 16px; }
+  }
+  .py-80 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .my-80 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  //MAIN
+  .f_main { 
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+  .p_main__txt { width: 100%; }
+
+
+  //COLLECTION
+  .f_collection {
+    padding-bottom: 40px; 
+    padding-top: 0;
+  }
+  .p_collection {
+    &__info {
+      min-height: 0;
+      padding: 40px 20px 25px;
+    }
+  }
+    
+
+
+  //VIDEO
+  .f_video {
+    .container { padding: 0; } 
+  }
+
+  //BOTTOM
+  .f_bottom { padding: 40px 0 0; }
+  .p_form { padding: 40px 12px; }
+
+
+  //FOOTER
+  .f_footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+}
