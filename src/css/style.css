@@ -12129,6 +12129,7 @@ body {
   }
   .p_form {
     padding: 40px 12px;
+    margin-bottom: 0;
   }
   .f_footer {
     padding-top: 40px;
