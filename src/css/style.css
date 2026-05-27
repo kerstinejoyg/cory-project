@@ -11943,6 +11943,7 @@ body {
 }
 .p_header img {
   width: 100%;
+  object-fit: cover;
 }
 
 .f_main {
